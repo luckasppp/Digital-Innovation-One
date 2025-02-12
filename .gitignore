@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+controle-candidatos/controle-candidatos/.vscode/settings.json
