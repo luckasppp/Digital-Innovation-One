@@ -4,3 +4,4 @@ __pycache__/
 venv/
 .env
 controle-candidatos/controle-candidatos/.vscode/settings.json
+controle-fluxo/controle-fluxo/.vscode/settings.json
