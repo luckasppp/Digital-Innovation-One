@@ -1,7 +1,5 @@
 package lanchonete.atendimento.cozinha;
 
-import lanchonete.atendimento.Atendente;
-
 public class Cozinheiro {
     // Pode ser defaut
     public void adicionarLancheNoBalcao() {
@@ -19,48 +17,56 @@ public class Cozinheiro {
         adicionarSucoNoBalcao();
     }
 
-    public void prepararLanche() {
+    private void prepararLanche() {
         System.out.println("Lanche preparado (hamburguer)");
     }
 
-    public void prepararSuco() {
+    private void prepararSuco() {
         System.out.println("Suco preparado (laranja)");
     }
 
-    public void prepararCombo() {
+    @SuppressWarnings("unused")
+    private void prepararCombo() {
         prepararLanche();
         prepararSuco();
     }
 
-    public void selecionarIgredientesLanche() {
+    @SuppressWarnings("unused")
+    private void selecionarIgredientesLanche() {
         System.out.println("Ingredientes selecionados (pão, carne, salada, ovo, queijo)");
     }
 
-    public void selecionarIgredientesVitamina() {
+    @SuppressWarnings("unused")
+    private void selecionarIgredientesVitamina() {
         System.out.println("Ingredientes selecionados (fruta, açucar, leite)");
     }
 
-    public void lavarIgredientes() {
+    @SuppressWarnings("unused")
+    private void lavarIgredientes() {
         System.out.println("Ingredientes lavados");
     }
 
-    public void baterVitaminaLiquidificador() {
+    @SuppressWarnings("unused")
+    private void baterVitaminaLiquidificador() {
         System.out.println("Vitamina batida no liquidificador");
     }
 
-    public void fritarIgredientesLanche() {
+    @SuppressWarnings("unused")
+    private void fritarIgredientesLanche() {
         System.out.println("Ingredientes fritos (carne, ovo)");
     }
 
+    /* Ação indisponível para o pacote cozinha
     public void pedirParaTrocarGas(Atendente meuAmigo) {
         meuAmigo.trocarGas();
     }
-
-    public void pedirParaTrocarGas(Almoxarife meuAmigo) {
+    */
+    @SuppressWarnings("unused")
+    private void pedirParaTrocarGas(Almoxarife meuAmigo) {
         meuAmigo.trocarGas();
     }
-
-    public void pedirIgreientes(Almoxarife meuAmigo) {
+    @SuppressWarnings("unused")
+    private void pedirIgreientes(Almoxarife meuAmigo) {
         meuAmigo.entregarIngredientes();
     }
 }

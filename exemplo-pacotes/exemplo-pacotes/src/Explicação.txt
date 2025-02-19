@@ -1,0 +1,6 @@
+Modificadores:
+
+default -> Disponível somente dentro da própria classe e do pacote.
+public -> Disponível para todas as classes e pacotes.
+private -> Disponível somente dentro da própria classe.
+protected -> Disponível dentro do mesmo pacote e também por subclasses (mesmo que estejam em pacotes diferentes).

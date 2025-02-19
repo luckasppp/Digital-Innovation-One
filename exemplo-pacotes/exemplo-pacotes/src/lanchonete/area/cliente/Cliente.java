@@ -10,14 +10,15 @@ public class Cliente {
     }
 
     public void pagarConta() {
+        consultarSaldoAplicativo();
         System.out.println("Conta paga");
     }
 
-    public void consultarSaldoAplicativo() {
+    private void consultarSaldoAplicativo() {
         System.out.println("Saldo consultado");
     }
-
-    public void pegarPedidoBalcao() {
-        System.out.println("Pedido retirado do balcão");
-    }
+    // Ação que não deveria estar disponível para o cliente
+    // public void pegarPedidoBalcao() {
+    //     System.out.println("Pedido retirado do balcão");
+    // }
 }
