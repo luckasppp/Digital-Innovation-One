@@ -1,12 +1,9 @@
 public class SistemaCadastro {
     public static void main(String[] args) {
-        Pessoa marcos = new Pessoa();
+        Pessoa marcos = new Pessoa("Marcos Selvo", "10102586395");
 
         marcos.setEndereço("Rua Argentina, Jardim Maringá");
 
-        // Como definir o nome e o cpf de marcos?
-
-        //Imprimindo o Marcos sem nome e cpf
-        System.out.println("Marcos: " + marcos.getNome() + " - " + marcos.getCpf() + " - " + marcos.getEndereço());
+        System.out.println(marcos.getNome() + " - " + marcos.getCpf() + " - " + marcos.getEndereço());
     }
 }
