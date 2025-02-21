@@ -1,6 +1,19 @@
-public non-sealed class Salesman extends Employee {
+public /*non-sealed*/ class Salesman extends Employee {
     private double comission;
     private double salary;
+
+    public Salesman() {
+    }
+
+    public Salesman(String code, String name, String address, int age, double salary, double comission) {
+        super(code, name, address, age, salary);
+        this.comission = comission;
+    }
+
+    @Override
+    public String getCode() {
+        return "S" + super.getCode();
+    }
 
     public double getComission() {
         return comission;

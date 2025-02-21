@@ -1,8 +1,23 @@
-public non-sealed class Manager extends Employee {
+public /*non-sealed*/ class Manager extends Employee {
     private String login;
     private String password;
     private double comission;
     private double salary;
+
+    public Manager() {
+    }
+
+    public Manager(String code, String name, String address, int age, double salary, String login, String password, double comission) {
+        super(code, name, address, age, salary);
+        this.login = login;
+        this.password = password;
+        this.comission = comission;
+    }
+
+    @Override
+    public String getCode() {
+        return "M" + super.getCode();
+    }
 
     public String getLogin() {
         return login;
